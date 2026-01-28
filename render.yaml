@@ -1,0 +1,9 @@
+# Render — one-click deploy
+# https://render.com
+services:
+  - type: web
+    name: sara-ethiopian-restaurant
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /api/health
