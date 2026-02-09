@@ -1,227 +1,393 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sara Ethiopian Restaurant — Authentic Cuisine & Coffee</title>
-  <meta name="description" content="Experience traditional Ethiopian cuisine at Sara. Injera, wats, and our celebrated coffee ceremony in a warm, communal setting.">
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect fill='%238b3a2a' width='32' height='32' rx='4'/><text x='16' y='22' font-size='18' text-anchor='middle' fill='%23e8d5b5' font-family='Georgia,serif'>S</text></svg>">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header class="header" id="header">
-    <nav class="nav">
-      <a href="#" class="logo">Sara</a>
-      <button class="nav-toggle" aria-label="Menu" aria-expanded="false" type="button">
-        <span></span><span></span><span></span>
-      </button>
-      <ul class="nav-list">
-        <li><a href="#about">About</a></li>
-        <li><a href="#menu">Menu</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sara Ethiopian Restaurant — Authentic Cuisine & Coffee</title>
+    <meta
+      name="description"
+      content="Experience traditional Ethiopian cuisine at Sara. Injera, wats, and our celebrated coffee ceremony in a warm, communal setting."
+    />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect fill='%238b3a2a' width='32' height='32' rx='4'/><text x='16' y='22' font-size='18' text-anchor='middle' fill='%23e8d5b5' font-family='Georgia,serif'>S</text></svg>"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://images.unsplash.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Outfit:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header" id="header">
+      <nav class="nav">
+        <a href="#" class="logo">Sara</a>
+        <button
+          class="nav-toggle"
+          aria-label="Menu"
+          aria-expanded="false"
+          type="button"
+        >
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <main>
-    <section class="hero">
-      <div class="hero-bg" role="img" aria-label="Warm restaurant dining atmosphere"></div>
-      <div class="hero-pattern" aria-hidden="true"></div>
-      <div class="hero-content">
-        <p class="hero-tagline">Authentic Ethiopian Cuisine</p>
-        <h1 class="hero-title">Sara</h1>
-        <p class="hero-sub">Injera, wats & the art of shared dining</p>
-        <a href="#menu" class="btn btn-primary">View Menu</a>
-      </div>
-      <div class="hero-scroll" aria-hidden="true"></div>
-    </section>
-
-    <section class="about" id="about">
-      <div class="container">
-        <div class="about-grid">
-          <div class="about-text">
-            <p class="section-eyebrow">Our Story</p>
-            <h2>Rooted in Tradition</h2>
-            <p class="lead">Sara brings the soul of Ethiopian hospitality to your table—berbere and niter kibbeh, injera as plate and utensil, and the ritual of eating together.</p>
-            <p>Our dishes honor Orthodox fasting traditions with rich vegan options, and every meal can end with our traditional coffee ceremony, roasted and brewed in the Ethiopian way.</p>
-          </div>
-          <div class="about-visual">
-            <div class="about-frame">
-              <img src="https://images.unsplash.com/photo-1574484284002-952d92456975?w=800&q=85" alt="Ethiopian food platter with injera and colorful wats" width="600" height="400" loading="eager">
-            </div>
-          </div>
+    <main>
+      <section class="hero">
+        <div
+          class="hero-bg"
+          role="img"
+          aria-label="Warm restaurant dining atmosphere"
+        ></div>
+        <div class="hero-pattern" aria-hidden="true"></div>
+        <div class="hero-content">
+          <p class="hero-tagline">Authentic Ethiopian Cuisine</p>
+          <h1 class="hero-title">Sara</h1>
+          <p class="hero-sub">Injera, wats & the art of shared dining</p>
+          <a href="#menu" class="btn btn-primary">View Menu</a>
         </div>
-      </div>
-    </section>
+        <div class="hero-scroll" aria-hidden="true"></div>
+      </section>
 
-    <section class="menu" id="menu">
-      <div class="container">
-        <p class="section-eyebrow">Taste</p>
-        <h2>Menu Highlights</h2>
-        <div class="menu-grid">
-          <article class="menu-card">
-            <div class="menu-card-img">
-              <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&q=85" alt="Doro wat, spiced chicken stew with injera" width="400" height="280" loading="lazy">
+      <section class="about" id="about">
+        <div class="container">
+          <div class="about-grid">
+            <div class="about-text">
+              <p class="section-eyebrow">Our Story</p>
+              <h2>Rooted in Tradition</h2>
+              <p class="lead">
+                Sara brings the soul of Ethiopian hospitality to your
+                table—berbere and niter kibbeh, injera as plate and utensil, and
+                the ritual of eating together.
+              </p>
+              <p>
+                Our dishes honor Orthodox fasting traditions with rich vegan
+                options, and every meal can end with our traditional coffee
+                ceremony, roasted and brewed in the Ethiopian way.
+              </p>
             </div>
-            <div class="menu-card-body">
-              <h3>Doro Wat</h3>
-              <p>Spiced chicken stew with berbere, hard-boiled egg, and injera.</p>
-            </div>
-          </article>
-          <article class="menu-card">
-            <div class="menu-card-img">
-              <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600&q=85" alt="Vegetarian combo with lentils and greens" width="400" height="280" loading="lazy">
-            </div>
-            <div class="menu-card-body">
-              <h3>Vegetarian Combo</h3>
-              <p>Shiro, misir wot, gomen, atakilt wat, and more on a bed of injera.</p>
-            </div>
-          </article>
-          <article class="menu-card">
-            <div class="menu-card-img">
-              <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&q=85" alt="Tibs, sautéed beef or lamb" width="400" height="280" loading="lazy">
-            </div>
-            <div class="menu-card-body">
-              <h3>Tibs</h3>
-              <p>Sautéed beef or lamb with onions, peppers, and rosemary.</p>
-            </div>
-          </article>
-          <article class="menu-card">
-            <div class="menu-card-img">
-              <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=85" alt="Ethiopian coffee ceremony" width="400" height="280" loading="lazy">
-            </div>
-            <div class="menu-card-body">
-              <h3>Coffee Ceremony</h3>
-              <p>Traditional Ethiopian coffee, roasted and brewed at your table.</p>
-            </div>
-          </article>
-        </div>
-        <p class="menu-note">Full menu available in-house. Many vegan and gluten-conscious options.</p>
-      </div>
-    </section>
-
-    <section class="experience" id="experience">
-      <div class="container">
-        <p class="section-eyebrow">Experience</p>
-        <h2>The Sara Experience</h2>
-        <div class="experience-list">
-          <div class="experience-item">
-            <span class="experience-num">01</span>
-            <h3>Communal Plates</h3>
-            <p>Share from a mesob. Eat with your hands. Connect over every bite.</p>
-          </div>
-          <div class="experience-item">
-            <span class="experience-num">02</span>
-            <h3>Spice & Soul</h3>
-            <p>Berbere, niter kibbeh, and housemade blends in every dish.</p>
-          </div>
-          <div class="experience-item">
-            <span class="experience-num">03</span>
-            <h3>Coffee Ceremony</h3>
-            <p>Roasted green beans, incense, and three rounds of buna—strong, rich, and unhurried.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="gallery" id="gallery">
-      <div class="container">
-        <p class="section-eyebrow">Gallery</p>
-        <h2>At the Table</h2>
-        <div class="gallery-grid">
-          <div class="gallery-item gallery-item--wide">
-            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=1000&q=85" alt="Ethiopian platter with injera and wats" width="800" height="600" loading="lazy">
-          </div>
-          <div class="gallery-item">
-            <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=85" alt="Coffee and espresso" width="400" height="300" loading="lazy">
-          </div>
-          <div class="gallery-item">
-            <img src="https://images.unsplash.com/photo-1414237427421-337ed51587a0?w=600&q=85" alt="Dining table with shared plates" width="400" height="300" loading="lazy">
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact" id="contact">
-      <div class="container">
-        <p class="section-eyebrow">Find Us</p>
-        <h2>Visit Us</h2>
-        <div class="contact-grid">
-          <div class="contact-block">
-            <h3>Hours</h3>
-            <p>Tue–Thu: 11:30 – 9:00<br>Fri–Sat: 11:30 – 10:00<br>Sun: 12:00 – 8:00<br>Mon: Closed</p>
-          </div>
-          <div class="contact-block">
-            <h3>Location</h3>
-            <p>123 Spice Lane<br>Your City, ST 12345</p>
-          </div>
-          <div class="contact-block">
-            <h3>Reservations</h3>
-            <p><a href="tel:+15551234567">(555) 123-4567</a><br><a href="mailto:hello@saraethiopian.com">hello@saraethiopian.com</a></p>
-          </div>
-        </div>
-
-        <div class="contact-forms">
-          <div class="form-card">
-            <h3>Send a message</h3>
-            <form id="form-contact" class="form" novalidate>
-              <label for="contact-name">Name</label>
-              <input type="text" id="contact-name" name="name" required autocomplete="name">
-              <label for="contact-email">Email</label>
-              <input type="email" id="contact-email" name="email" required autocomplete="email">
-              <label for="contact-message">Message</label>
-              <textarea id="contact-message" name="message" rows="4" required></textarea>
-              <p id="contact-feedback" class="form-feedback" aria-live="polite"></p>
-              <button type="submit" class="btn btn-primary">Send</button>
-            </form>
-          </div>
-          <div class="form-card">
-            <h3>Reserve a table</h3>
-            <form id="form-reservation" class="form" novalidate>
-              <label for="res-name">Name</label>
-              <input type="text" id="res-name" name="name" required autocomplete="name">
-              <label for="res-email">Email</label>
-              <input type="email" id="res-email" name="email" required autocomplete="email">
-              <label for="res-phone">Phone</label>
-              <input type="tel" id="res-phone" name="phone" required autocomplete="tel">
-              <div class="form-row">
-                <div>
-                  <label for="res-date">Date</label>
-                  <input type="date" id="res-date" name="date" required>
-                </div>
-                <div>
-                  <label for="res-time">Time</label>
-                  <input type="time" id="res-time" name="time" required>
-                </div>
-                <div>
-                  <label for="res-guests">Guests</label>
-                  <input type="number" id="res-guests" name="guests" min="1" max="20" value="2" required>
-                </div>
+            <div class="about-visual">
+              <div class="about-frame">
+                <img
+                  src="images/about-food.jpg"
+                  alt="Ethiopian food platter with injera and colorful wats"
+                  width="600"
+                  height="400"
+                  loading="eager"
+                />
               </div>
-              <label for="res-note">Note <span class="optional">(optional)</span></label>
-              <textarea id="res-note" name="note" rows="2" placeholder="Dietary needs, occasion…"></textarea>
-              <p id="reservation-feedback" class="form-feedback" aria-live="polite"></p>
-              <button type="submit" class="btn btn-primary">Request reservation</button>
-            </form>
+            </div>
           </div>
         </div>
+      </section>
+
+      <section class="menu" id="menu">
+        <div class="container">
+          <p class="section-eyebrow">Taste</p>
+          <h2>Menu Highlights</h2>
+          <div class="menu-grid">
+            <article class="menu-card">
+              <div class="menu-card-img">
+                <img
+                  src="images/doro-wat.jpg"
+                  alt="Doro wat, spiced chicken stew with injera"
+                  width="400"
+                  height="280"
+                  loading="lazy"
+                />
+              </div>
+              <div class="menu-card-body">
+                <h3>Doro Wat</h3>
+                <p>
+                  Spiced chicken stew with berbere, hard-boiled egg, and injera.
+                </p>
+              </div>
+            </article>
+            <article class="menu-card">
+              <div class="menu-card-img">
+                <img
+                  src="images/vegetarian-combo.jpg"
+                  alt="Vegetarian combo with lentils and greens"
+                  width="400"
+                  height="280"
+                  loading="lazy"
+                />
+              </div>
+              <div class="menu-card-body">
+                <h3>Vegetarian Combo</h3>
+                <p>
+                  Shiro, misir wot, gomen, atakilt wat, and more on a bed of
+                  injera.
+                </p>
+              </div>
+            </article>
+            <article class="menu-card">
+              <div class="menu-card-img">
+                <img
+                  src="images/tibs.jpg"
+                  alt="Tibs, sautéed beef or lamb"
+                  width="400"
+                  height="280"
+                  loading="lazy"
+                />
+              </div>
+              <div class="menu-card-body">
+                <h3>Tibs</h3>
+                <p>Sautéed beef or lamb with onions, peppers, and rosemary.</p>
+              </div>
+            </article>
+            <article class="menu-card">
+              <div class="menu-card-img">
+                <img
+                  src="images/coffee-ceremony.jpg"
+                  alt="Ethiopian coffee ceremony"
+                  width="400"
+                  height="280"
+                  loading="lazy"
+                />
+              </div>
+              <div class="menu-card-body">
+                <h3>Coffee Ceremony</h3>
+                <p>
+                  Traditional Ethiopian coffee, roasted and brewed at your
+                  table.
+                </p>
+              </div>
+            </article>
+          </div>
+          <p class="menu-note">
+            Full menu available in-house. Many vegan and gluten-conscious
+            options.
+          </p>
+        </div>
+      </section>
+
+      <section class="experience" id="experience">
+        <div class="container">
+          <p class="section-eyebrow">Experience</p>
+          <h2>The Sara Experience</h2>
+          <div class="experience-list">
+            <div class="experience-item">
+              <span class="experience-num">01</span>
+              <h3>Communal Plates</h3>
+              <p>
+                Share from a mesob. Eat with your hands. Connect over every
+                bite.
+              </p>
+            </div>
+            <div class="experience-item">
+              <span class="experience-num">02</span>
+              <h3>Spice & Soul</h3>
+              <p>Berbere, niter kibbeh, and housemade blends in every dish.</p>
+            </div>
+            <div class="experience-item">
+              <span class="experience-num">03</span>
+              <h3>Coffee Ceremony</h3>
+              <p>
+                Roasted green beans, incense, and three rounds of buna—strong,
+                rich, and unhurried.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery" id="gallery">
+        <div class="container">
+          <p class="section-eyebrow">Gallery</p>
+          <h2>At the Table</h2>
+          <div class="gallery-grid">
+            <div class="gallery-item gallery-item--wide">
+              <img
+                src="images/gallery-wide.jpg"
+                alt="Ethiopian platter with injera and wats"
+                width="800"
+                height="600"
+                loading="lazy"
+              />
+            </div>
+            <div class="gallery-item">
+              <img
+                src="images/gallery-coffee.jpg"
+                alt="Coffee and espresso"
+                width="400"
+                height="300"
+                loading="lazy"
+              />
+            </div>
+            <div class="gallery-item">
+              <img
+                src="images/gallery-dining.jpg"
+                alt="Dining table with shared plates"
+                width="400"
+                height="300"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="container">
+          <p class="section-eyebrow">Find Us</p>
+          <h2>Visit Us</h2>
+          <div class="contact-grid">
+            <div class="contact-block">
+              <h3>Hours</h3>
+              <p>
+                Tue–Thu: 11:30 – 9:00<br />Fri–Sat: 11:30 – 10:00<br />Sun:
+                12:00 – 8:00<br />Mon: Closed
+              </p>
+            </div>
+            <div class="contact-block">
+              <h3>Location</h3>
+              <p>
+                <br />@Sadora appartments District 2 so 13an loi dong thu duc
+                thanh pho Ho chi minh 700000 vietnam
+              </p>
+            </div>
+            <div class="contact-block">
+              <h3>Reservations</h3>
+              <p>
+                <a href="tel:+84587834307">(+845) 878-4307</a><br /><a
+                  href="mailto:Bdemissie45@gmail.com"
+                  >Bdemissie45@gmail.com</a
+                >
+              </p>
+            </div>
+          </div>
+
+          <div class="contact-forms">
+            <div class="form-card">
+              <h3>Send a message</h3>
+              <form id="form-contact" class="form" novalidate>
+                <label for="contact-name">Name</label>
+                <input
+                  type="text"
+                  id="contact-name"
+                  name="name"
+                  required
+                  autocomplete="name"
+                />
+                <label for="contact-email">Email</label>
+                <input
+                  type="email"
+                  id="contact-email"
+                  name="email"
+                  required
+                  autocomplete="email"
+                />
+                <label for="contact-message">Message</label>
+                <textarea
+                  id="contact-message"
+                  name="message"
+                  rows="4"
+                  required
+                ></textarea>
+                <p
+                  id="contact-feedback"
+                  class="form-feedback"
+                  aria-live="polite"
+                ></p>
+                <button type="submit" class="btn btn-primary">Send</button>
+              </form>
+            </div>
+            <div class="form-card">
+              <h3>Reserve a table</h3>
+              <form id="form-reservation" class="form" novalidate>
+                <label for="res-name">Name</label>
+                <input
+                  type="text"
+                  id="res-name"
+                  name="name"
+                  required
+                  autocomplete="name"
+                />
+                <label for="res-email">Email</label>
+                <input
+                  type="email"
+                  id="res-email"
+                  name="email"
+                  required
+                  autocomplete="email"
+                />
+                <label for="res-phone">Phone</label>
+                <input
+                  type="tel"
+                  id="res-phone"
+                  name="phone"
+                  required
+                  autocomplete="tel"
+                />
+                <div class="form-row">
+                  <div>
+                    <label for="res-date">Date</label>
+                    <input type="date" id="res-date" name="date" required />
+                  </div>
+                  <div>
+                    <label for="res-time">Time</label>
+                    <input type="time" id="res-time" name="time" required />
+                  </div>
+                  <div>
+                    <label for="res-guests">Guests</label>
+                    <input
+                      type="number"
+                      id="res-guests"
+                      name="guests"
+                      min="1"
+                      max="20"
+                      value="2"
+                      required
+                    />
+                  </div>
+                </div>
+                <label for="res-note"
+                  >Note <span class="optional">(optional)</span></label
+                >
+                <textarea
+                  id="res-note"
+                  name="note"
+                  rows="2"
+                  placeholder="Dietary needs, occasion…"
+                ></textarea>
+                <p
+                  id="reservation-feedback"
+                  class="form-feedback"
+                  aria-live="polite"
+                ></p>
+                <button type="submit" class="btn btn-primary">
+                  Request reservation
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p class="footer-logo">Sara</p>
+        <p class="footer-credit">
+          © <span id="year"></span> Sara Ethiopian Restaurant. Crafted with
+          care.
+        </p>
       </div>
-    </section>
-  </main>
+    </footer>
 
-  <footer class="footer">
-    <div class="container">
-      <p class="footer-logo">Sara</p>
-      <p class="footer-credit">© <span id="year"></span> Sara Ethiopian Restaurant. Crafted with care.</p>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
