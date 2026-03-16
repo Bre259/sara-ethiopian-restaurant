@@ -10,11 +10,18 @@
   "engines": {
     "node": ">=18"
   },
-  "keywords": ["restaurant", "ethiopian", "website"],
+  "keywords": [
+    "restaurant",
+    "ethiopian",
+    "website"
+  ],
   "author": "",
   "license": "MIT",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.21.0"
+  },
+  "devDependencies": {
+    "vite": "^7.3.1"
   }
 }

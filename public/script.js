@@ -43,7 +43,7 @@
       var orig = btn.textContent;
       btn.disabled = true;
       btn.textContent = "Sending…";
-      fetch("/api/contact", {
+      fetch("/.netlify/functions/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -86,7 +86,7 @@
       var orig = btn.textContent;
       btn.disabled = true;
       btn.textContent = "Sending…";
-      fetch("/api/reservations", {
+      fetch("/.netlify/functions/reservations", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
