@@ -34,7 +34,10 @@ exports.handler = async (event, context) => {
   if (!name || !email || !phone || !date || !time || !guests) {
     return {
       statusCode: 400,
-      body: JSON.stringify({ success: false, error: "Name, email, phone, date, time, and guests are required." }),
+      body: JSON.stringify({
+        success: false,
+        error: "Name, email, phone, date, time, and guests are required.",
+      }),
     };
   }
 
@@ -47,10 +50,20 @@ exports.handler = async (event, context) => {
     guests: String(guests).trim(),
     note: (note && String(note).trim()) || "",
   };
-  if (!trimmed.name || !trimmed.email || !trimmed.phone || !trimmed.date || !trimmed.time || !trimmed.guests) {
+  if (
+    !trimmed.name ||
+    !trimmed.email ||
+    !trimmed.phone ||
+    !trimmed.date ||
+    !trimmed.time ||
+    !trimmed.guests
+  ) {
     return {
       statusCode: 400,
-      body: JSON.stringify({ success: false, error: "Required fields cannot be empty." }),
+      body: JSON.stringify({
+        success: false,
+        error: "Required fields cannot be empty.",
+      }),
     };
   }
 
@@ -60,7 +73,13 @@ exports.handler = async (event, context) => {
     console.warn("Could not save reservation:", e.message);
   }
 
-  console.log("Reservation:", trimmed.email, trimmed.date, trimmed.time, trimmed.guests);
+  console.log(
+    "Reservation:",
+    trimmed.email,
+    trimmed.date,
+    trimmed.time,
+    trimmed.guests,
+  );
 
   return {
     statusCode: 200,

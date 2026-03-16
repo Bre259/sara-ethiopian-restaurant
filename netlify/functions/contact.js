@@ -34,15 +34,25 @@ exports.handler = async (event, context) => {
   if (!name || !email || !message) {
     return {
       statusCode: 400,
-      body: JSON.stringify({ success: false, error: "Name, email, and message are required." }),
+      body: JSON.stringify({
+        success: false,
+        error: "Name, email, and message are required.",
+      }),
     };
   }
 
-  const trimmed = { name: String(name).trim(), email: String(email).trim(), message: String(message).trim() };
+  const trimmed = {
+    name: String(name).trim(),
+    email: String(email).trim(),
+    message: String(message).trim(),
+  };
   if (!trimmed.name || !trimmed.email || !trimmed.message) {
     return {
       statusCode: 400,
-      body: JSON.stringify({ success: false, error: "Name, email, and message cannot be empty." }),
+      body: JSON.stringify({
+        success: false,
+        error: "Name, email, and message cannot be empty.",
+      }),
     };
   }
 

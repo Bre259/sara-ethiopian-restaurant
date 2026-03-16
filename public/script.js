@@ -17,7 +17,10 @@
   if (toggle && navList) {
     toggle.addEventListener("click", function () {
       navList.classList.toggle("is-open");
-      toggle.setAttribute("aria-expanded", navList.classList.contains("is-open"));
+      toggle.setAttribute(
+        "aria-expanded",
+        navList.classList.contains("is-open"),
+      );
     });
     navList.querySelectorAll("a").forEach(function (a) {
       a.addEventListener("click", function () {
@@ -52,19 +55,23 @@
           message: formContact.message.value.trim(),
         }),
       })
-        .then(function (r) { return r.json(); })
+        .then(function (r) {
+          return r.json();
+        })
         .then(function (data) {
           if (data.success) {
             contactFeedback.textContent = "Thank you. We'll be in touch soon.";
             contactFeedback.className = "form-feedback is-success";
             formContact.reset();
           } else {
-            contactFeedback.textContent = data.error || "Something went wrong. Please try again.";
+            contactFeedback.textContent =
+              data.error || "Something went wrong. Please try again.";
             contactFeedback.className = "form-feedback is-error";
           }
         })
         .catch(function () {
-          contactFeedback.textContent = "Network error. Please check your connection and try again.";
+          contactFeedback.textContent =
+            "Network error. Please check your connection and try again.";
           contactFeedback.className = "form-feedback is-error";
         })
         .finally(function () {
@@ -99,20 +106,25 @@
           note: formRes.note.value.trim(),
         }),
       })
-        .then(function (r) { return r.json(); })
+        .then(function (r) {
+          return r.json();
+        })
         .then(function (data) {
           if (data.success) {
-            resFeedback.textContent = "Request received. We'll confirm your reservation soon.";
+            resFeedback.textContent =
+              "Request received. We'll confirm your reservation soon.";
             resFeedback.className = "form-feedback is-success";
             formRes.reset();
             if (formRes.guests) formRes.guests.value = "2";
           } else {
-            resFeedback.textContent = data.error || "Something went wrong. Please try again.";
+            resFeedback.textContent =
+              data.error || "Something went wrong. Please try again.";
             resFeedback.className = "form-feedback is-error";
           }
         })
         .catch(function () {
-          resFeedback.textContent = "Network error. Please check your connection and try again.";
+          resFeedback.textContent =
+            "Network error. Please check your connection and try again.";
           resFeedback.className = "form-feedback is-error";
         })
         .finally(function () {
